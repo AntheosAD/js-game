@@ -78,10 +78,10 @@ function Init(){
                 paletteData = `<div class="pallete-item pallete-${block}" type="${block}"></div>`;
                 break;
             case 'exit':
-                paletteData = `<div class="pallete-item pallete-${block}" type="${block}"><img src="../img/blocks/${block}.gif" ></div>`
+                paletteData = `<div class="pallete-item pallete-${block}" type="${block}"><img src="./img/blocks/${block}.gif" ></div>`
                 break;
             default:
-                paletteData = `<div class="pallete-item pallete-${block}" type="${block}"><img src="../img/blocks/${block}.png"></div>`
+                paletteData = `<div class="pallete-item pallete-${block}" type="${block}"><img src="./img/blocks/${block}.png"></div>`
                 break;
         }
         document.querySelector('.pallete-items').innerHTML += paletteData;
