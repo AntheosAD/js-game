@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     await GetMaps('https://antheosad.github.io/js-game/maps.json');
 
     // Check if maps were loaded
-    if(maps=[] || maps==null){
+    if(maps==[] || maps==null){
         console.log('No maps found!');
 
         //Set test maps if fetching failed
