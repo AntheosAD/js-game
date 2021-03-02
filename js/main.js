@@ -6,7 +6,7 @@ let sequence = [];
 document.addEventListener('DOMContentLoaded', async () => {
 
     //Get maps file from server
-    //await GetMaps('http://localhost/game/maps.json');
+    await GetMaps('https://antheosad.github.io/js-game/maps.json');
 
     // Check if maps were loaded
     if(maps=[] || maps==null){
@@ -355,6 +355,6 @@ async function GetMaps(url){
             }); 
         });
     }catch(e){
-        console.log(e)
+        console.log(e);
     }    
 }
